@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grunt Bootstrap prêt à l'emploi</title>
+    <link href="css/styles.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+          <h1>Environnement Grunt/Bower avec Bootstrap opérationnels en 2min.</h1>
+          <p class="lead">
+
+
+            <h3>Première installation :</h3>
+            <ul>
+              <li>Ouvrir une console dans assets/</li>
+              <li>
+                <code>npm install</code>
+              </li>
+              <li>
+                <code>grunt bower:init</code>
+              </li>
+              <li>
+                <code>grunt watch</code>
+              </li>
+              <li>
+                Commencer à développer !
+              </li>
+            </ul>
+
+            <hr>
+
+
+            <h3>
+              Installer une nouvelle librairie : <br>
+              <small>(Ici angular pour l'exemple)</small>
+            </h3>
+          	<ul>
+          		<li>Ouvrir une console dans assets/</li>
+          		<li>
+          			<code>bower install angularjs</code>
+          		</li>
+              <li>
+                <code>grunt bower</code>
+              </li>
+          		<li>
+          			<code>grunt watch</code>
+          		</li>
+          		<li>
+          			Continuer à développer en utilisant angular !
+          		</li>
+          	</ul>
+
+            <hr>
+
+            <div class="alert alert-info">
+              <strong>
+                <code>grunt watch</code> n'exécute rien tant qu'aucune modification n'a été détectée, pour forcer la compilation il suffit d'executer <code>grunt</code> seul d'abord.
+              </strong>
+            </div>
+
+            <div class="alert alert-danger">
+              <strong>
+                La commande <code>grunt bower:init</code> ne doit plus être lancée après installation, utiliser seulement <code>grunt bower</code> à la place.
+              </strong>
+            </div>
+          </p>
+        </div>
+   	</div>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>
